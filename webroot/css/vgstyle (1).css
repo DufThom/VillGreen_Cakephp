@@ -1,0 +1,127 @@
+body{
+    background-color: #000000;
+}
+.MyBlack{
+    background-color: #242424;
+}
+.gris{
+    background-color: #e4e4e4;
+}
+.gris2{
+    background-color: #a0a0a0;
+}
+
+.Entete{
+    height: 40px;
+    padding: 20px;
+}
+.sizeButton{
+    width: 20%;
+}
+.imgLoupe{
+    height: 25px;
+    margin-right: -1px;
+    margin-top: -1px;
+}
+.imgEntete{
+    height: 23px;
+    margin-right: 4px;
+}
+.btnEntete{
+    width: 100%;
+    height: 35px;
+    border: none;
+    text-align: center;
+}
+#Recherche1{
+    margin-left: 16px;
+    background-color: white;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+/*Retirer le souligné des liens*/
+a {
+    text-decoration: none;
+}
+
+.search{
+    border: solid 1px #242424;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 23px;
+}
+.sanspadding{
+    padding:0px;
+}
+.sansmargin{
+    margin: 0px;
+}
+.MargG10{
+    margin-left: 20px;
+}
+.Fender{
+    width: 100%;
+}
+.Selmer{
+    width: 100%;
+}
+
+.Selmer2{
+    width: 103%;
+}
+
+.LargFix {
+    width: 250px;
+}
+
+.PositionARplan{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.btnEnvoyer{
+    border-radius: 20px;
+    background-image: url("../ImagesVG/inscription/button%20send.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-align: center;
+}
+.btnAnnul{
+    background-color: "";
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    color: red;
+    text-script: "Annuler";
+}
+.AnnulBtn{
+    content: "Annuler";
+    z-index: 1;
+}
+
+.img_prod{
+    width: 150px;
+    height: 180px;
+}
+
+
+
+
+
+
+
+
+

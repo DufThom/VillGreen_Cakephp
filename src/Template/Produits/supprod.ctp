@@ -1,0 +1,1 @@
+<div>Suppression produits</div>
