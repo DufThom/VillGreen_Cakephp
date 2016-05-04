@@ -2,7 +2,7 @@
 
 
 <!-- Barre des Rubriques -->
-            <div class="mdl-layout__header-row Entete MyBlack">
+            <div id="menuIcon" class="mdl-layout__header-row Entete MyBlack ">
                 <div >
                     <a href="<?= $this->Url->build("/produits/rubriq/1")?>" class="FontGris Entete">
                         Guitare <img id="IcoGuitare" src="<?= $this->Url->build("/ImagesVG/accueil/icon%20guitar.png") ?>" data-swap="<?= $this->Url->build("/ImagesVG/accueil/icon%20guitar%20activ.png") ?> " class="imgEntete">

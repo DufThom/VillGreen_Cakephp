@@ -7,7 +7,7 @@
 }
 .Hfontcli2{
     font-size: 20px;
-    font-style: bold;
+    font-weight: bold;
 }
 .fontBlack{
     color: #242424;
@@ -17,6 +17,15 @@
 }
 .ProdCentre{
     text-align:center;
+}
+
+/*#menuIcon a{*/
+    /*!*margin-left: 50px;*!*/
+    /*margin:auto;*/
+/*}*/
+
+.ToutCentre{
+    align-self: center;
 }
 .MargCentre{
     margin-left: auto;
@@ -162,6 +171,20 @@
     border-color: #0094BC;
 }
 
+.AppMobBtn{
+    background: #242424;
+}
+
+.AppMobBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0d0"; /* add googleplus icon */
+}
+
+.AppMobBtn:hover{
+    color: #e64522;
+    background: #fff;
+    border-color: #e64522;
+}
 
 
 

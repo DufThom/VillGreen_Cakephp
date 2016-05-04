@@ -39,14 +39,29 @@ class ClientController extends AppController
 
     public function connexion() // Prévoir la possibilité au client de modifier son mdp (lors de la 1ère connexion, par ex)
     {
-        //$identity = $this->Client->get('nom', 'mail');
+        //$identity = $this->Client->get('mail', 'mot2passe');
         //$this->set('ident', $identity);
         //$this->redirect("/Pages/display");
         $this -> render('inscription');
     }
 
     public function mdpmodif(){
+        if ($this->request->is('post')) {
+            $mail =  $this->request->data('mail');
+            $mot2passe =  $this->request->data('mot2passe');
+            $m1 =  $this->request->data('mot2passe1');
+            $m2 =  $this->request->data('mot2passe2');
 
+            $query = $this->Client->find()->where(['mail' => $mail, 'mot2passe' => $mot2passe]);
+            $cli = $query->first();
+
+            if ($m1 == $m2) {
+                $cli->mot2passe = $m1;
+                $this->Client->save($cli);
+            }
+
+//            debug($cli);
+        }
 
     }
 

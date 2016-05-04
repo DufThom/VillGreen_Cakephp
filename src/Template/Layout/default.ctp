@@ -55,9 +55,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <div class="mdl-grid  FontGris myriad">
                 <div class="mdl-cell mdl-cell--4-col">
                     SUIVEZ NOUS SUR : <br /><br />
+                    <div>
                     <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/thom.pyro" ></a>
                     <a class="googleplusBtn smGlobalBtn" href="https://plus.google.com/u/0/113772452785549939672" ></a>
                     <a class="linkedinBtn smGlobalBtn" href="https://fr.linkedin.com/in/thomas-dufaux-75ba96115" ></a>
+                    </div><br />
+                    <a class=" AppMobBtn smGlobalBtn" href="http://dl.bienvu.net/thomasd/VillGreenApk/VGappAndroid.apk" ></a>
+                    <- notre Appli mobile
                 </div>
 
                 <div class="mdl-cell mdl-cell--4-col">

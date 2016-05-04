@@ -2,6 +2,17 @@
 
 $(document).ready(function(){
 
+//+++ Verif sur Modification du Mot de Passe +++++++++++++++++++++++++++++++++++++
+    $("#MdpNewConf").mouseleave(function(){
+        if(($("#MdpNew").val())!=($("#MdpNewConf").val())){
+            alert("Vérifiez la saisie de votre New Mdp");
+        }
+    });
+
+
+
+
+//+++ Roll-Over sur les icones (passage du blanc au vert) ++++++++++++++++++++++++++++++++++++++
     $("#imgpanier").hover(function() {
         var _this = $(this);
         var current = _this.attr("src");

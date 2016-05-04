@@ -21,14 +21,14 @@
                 </tr>
                 <tr >
                     <td><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input gris fontBlack" type="password" id="MdpNew" name="mot2passe"> <!--NOUVEAU MdP-->
+                            <input class="mdl-textfield__input gris fontBlack" type="password" id="MdpNew" name="mot2passe1"> <!--NOUVEAU MdP-->
                             <label class="mdl-textfield__label" for="MdpNew">Nouveau Mot de passe </label>
                         </div>
                     </td>
                 </tr>
                 <tr >
                     <td><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input gris fontBlack" type="password" id="MdpNewConf" name="mot2passe"> <!--CONFIRM New MdP-->
+                            <input class="mdl-textfield__input gris fontBlack" type="password" id="MdpNewConf" name="mot2passe2"> <!--CONFIRM New MdP-->
                             <label class="mdl-textfield__label" for="MdpNewConf">Confirmez Nouveau Mot de passe </label>
                         </div>
                     </td>
@@ -36,7 +36,7 @@
                 <tr >
                     <td class=""><div class="ProdCentre">
                             <input type="reset" class="btnAnnul AnnulBtn" value="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="submit" class="btnEnvoyer" value="" />
+                            <input type="submit" class="btnEnvoyer" value="" id="btnModifMdp" />
                         </div>
                     </td>
                 </tr>
