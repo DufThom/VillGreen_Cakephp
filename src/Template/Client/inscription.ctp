@@ -66,7 +66,7 @@
                             <span class="mdl-textfield__error">Veuillez vérifier, svp ... </span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input gris fontBlack" type="text" id="Mail" name="mail">
+                            <input class="mdl-textfield__input gris fontBlack mail_inscription" type="text" id="Identifiant" name="mail">
                             <label class="mdl-textfield__label" for="mail">Adresse Mail</label>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -85,5 +85,29 @@
 
 
 
+<script>
 
+ //+++ Verif si Mail Unique dans la DB +++++++++++++++++++++++++++++++
+    $(document).ready(function() {
+        $(".mail_inscription").focusout(function () {
+            console.log("test focus lost");
+            var mot = $(".mail_inscription").val();
+            var donnees = "query=" + mot;
+            var URL = '<?= $this->Url->build("/client/verifmail/")  ?>';
+
+            $.ajax({
+                url: URL,
+                data: donnees,
+                success: function(data) {
+                    console.log(data);
+                    if (data == "oui") {
+                        console.log("error le mail existe déjà");
+                    }
+                }
+
+            });
+        });
+    });
+
+</script>
 

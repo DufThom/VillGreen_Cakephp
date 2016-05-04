@@ -60,10 +60,31 @@ class ClientController extends AppController
                 $this->Client->save($cli);
             }
 
-//            debug($cli);
+            //  debug($cli);
         }
 
     }
+
+// ++ Verif Mail unique dans la DB +++++++++++++++++++++++++++++++++++++++++++++++    
+    public function verifmail(){
+
+        $this->viewBuilder()->layout('ajax');
+
+        $cli = $this->request->query("query");
+        //echo $cli;
+
+        $query = $this->Client->find()->where(['mail' => $cli]);
+
+//        $query = $this->Client->findByMail($cli);
+
+        if($query->count()){
+            $this->set('reponse', "oui");
+        }
+        else {
+           $this->set('reponse', "non");
+        }
+
+    }    
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ INSCRIPTION
     public function inscription() // Prévoir la demande de confirmation du mdp avant de valider !!!
@@ -102,7 +123,7 @@ class ClientController extends AppController
             $cli = $this->Client->newEntity();
             $cli = $this->Client->patchEntity($cli, $this->request->data);
             if ($this->Client->save($cli)){
-//                $this->Flash->success('Vous êtes bien enregistré.');
+                $this->Flash->success('Vous êtes bien enregistré.');
                 $this->redirect("/Pages/display");
             }
             else{
@@ -118,7 +139,7 @@ class ClientController extends AppController
         if($this->request->is('post')){
             $this->Client->patchEntity($client,$this->request->data);
             if($this->Client->save($client)){
-//                $this->Flash->success('Modifications enregistrées');
+                $this->Flash->success('Modifications enregistrées');
                 $this->redirect("/client/listecli/");
             }
             else{
@@ -134,7 +155,7 @@ class ClientController extends AppController
         if($this->request->is('post')){
             $this->Client->delete($client, $this->request->data);
             if($this->Client->save($client)){
-//                $this->Flash->success('Le client a bien été supprimé');
+                $this->Flash->success('Le client a bien été supprimé');
                 $this->redirect("/client/listecli/");
             }
             else{

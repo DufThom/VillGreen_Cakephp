@@ -2,15 +2,14 @@
 
 $(document).ready(function(){
 
+
+
 //+++ Verif sur Modification du Mot de Passe +++++++++++++++++++++++++++++++++++++
     $("#MdpNewConf").mouseleave(function(){
         if(($("#MdpNew").val())!=($("#MdpNewConf").val())){
             alert("Vérifiez la saisie de votre New Mdp");
         }
     });
-
-
-
 
 //+++ Roll-Over sur les icones (passage du blanc au vert) ++++++++++++++++++++++++++++++++++++++
     $("#imgpanier").hover(function() {
@@ -141,14 +140,14 @@ $(document).ready(function(){
     });
 
 // Vérification Mail +++++++++++++++++++++++++++++++++++++++++++++++++
-    $("#Mail").focusout(function(){
-        if(Mail.test($("#Mail").val())== false){
+    $("#Identifiant").focusout(function(){
+        if(Mail.test($("#Identifiant").val())== false){
             alert("Vérifiez votre adresse MAIL, svp \n elle vous servira d'Identifiant pour vous connecter");
-            $("#Mail").focus();
-            $("#Mail").css("background-color","red");
+            $("#Identifiant").focus();
+            $("#Identifiant").css("background-color","red");
         }
         else{
-            $("#Mail").css("background-color","white");
+            $("#Identifiant").css("background-color","white");
         }
     });
 

@@ -31,7 +31,7 @@
                     <td class="mdl-data-table__cell--non-numeric"><input type="text" name="phone" value="<?= $client->phone ?>"></td> </tr>
                 <tr>
                     <td>Mail :</td>
-                    <td class="mdl-data-table__cell--non-numeric"><input type="text" name="mail" value="<?= $client->mail ?>"></td> </tr>
+                    <td class="mdl-data-table__cell--non-numeric"><input type="text" id ="Identifiant" name="mail" value="<?= $client->mail ?>"></td> </tr>
                 <tr>
                     <td>Mot de passe (temporaire) :</td>
                     <td class="mdl-data-table__cell--non-numeric"><input type="text" name="mot2passe" value="<?= $client->mot2passe ?>"></td> </tr>

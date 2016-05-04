@@ -41,7 +41,7 @@ class ProduitsController extends AppController
     }
 
     public function infosprod($id){
-        $prod = $this->Produits->get($id);
+        $prod = $this->Produits->findById($id);
         $this->set('info', $prod);
     }
 
