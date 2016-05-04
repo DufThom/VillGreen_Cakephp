@@ -36,6 +36,7 @@ class ClientController extends AppController
 //        parent::beforeFilter($event);
 //        $this->Auth->allow(['inscription']);
 //    }
+// fonction à faire plus tard
 
     public function connexion() // Prévoir la possibilité au client de modifier son mdp (lors de la 1ère connexion, par ex)
     {
